@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Boke:
+  = @plain.boke
+p
+  strong Tsukkomi:
+  = @plain.tsukkomi
+
+= link_to 'Edit', edit_plain_path(@plain)
+'|
+= link_to 'Back', plains_path

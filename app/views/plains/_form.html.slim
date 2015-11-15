@@ -1,0 +1,15 @@
+= form_for @plain do |f|
+  - if @plain.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@plain.errors.count, "error")} prohibited this plain from being saved:"
+      ul
+        - @plain.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :boke
+    = f.text_field :boke
+  .field
+    = f.label :tsukkomi
+    = f.text_field :tsukkomi
+  .actions = f.submit

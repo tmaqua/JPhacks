@@ -1,0 +1,23 @@
+h1 Listing plains
+
+table
+  thead
+    tr
+      th Boke
+      th Tsukkomi
+      th
+      th
+      th
+
+  tbody
+    - @plains.each do |plain|
+      tr
+        td = plain.boke
+        td = plain.tsukkomi
+        td = link_to 'Show', plain
+        td = link_to 'Edit', edit_plain_path(plain)
+        td = link_to 'Destroy', plain, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Plain', new_plain_path
