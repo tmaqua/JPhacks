@@ -18,6 +18,7 @@ gem 'unicorn'
 
 # mecab FFI
 gem 'natto'
+gem 'cabocha'
 gem 'slim-rails'
 
 # Use ActiveModel has_secure_password
