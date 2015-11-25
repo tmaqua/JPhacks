@@ -46,3 +46,9 @@ bower.json
 # Ignore pow environment settings
 .powenv
 
+# Ignore file
+*.csv
+*.txt
+*.text
+
+
