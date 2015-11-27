@@ -5,6 +5,6 @@
  - Slim
  - Rspec
  - FactoryGirl
-
+ - ああああ
 # SetUp
 bundle install --path=vendor/bundle --jobs=4
