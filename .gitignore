@@ -50,5 +50,8 @@ bower.json
 *.csv
 *.txt
 *.text
+*.wav
+*.wave
+*.flac
 
 
