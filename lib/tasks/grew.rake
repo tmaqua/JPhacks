@@ -53,12 +53,12 @@ namespace :grew do
 
   desc "音声ファイル(引数で指定)をgoogle speech APIでテキストに"
   task :voice_base, ['filename'] => :environment do |task, args|
-    base_url = "https://www.google.com/speech-api/v2/recognize"
-    api_key = "AIzaSyC8_TgU0ov1unX6eBGgiD5Ej2K5pv_dqbQ"
+    base_url = Settings.google_speech.base_url
+    api_key = Settings.google_speech.api_key
     content_type = "audio/l16; rate=16000"
     lang = "ja"
     output = "json"
-    file_path = "db/" + args.filename.to_s
+    file_path = Settings.google_speech.file_path + args.filename.to_s
 
     request_url = "#{base_url}?lang=#{lang}&output=#{output}&key=#{api_key}"
 

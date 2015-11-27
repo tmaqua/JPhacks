@@ -21,6 +21,8 @@ gem 'natto'
 gem 'cabocha'
 gem 'slim-rails'
 
+gem 'config'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
