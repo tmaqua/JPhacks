@@ -11,13 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151115144911) do
+ActiveRecord::Schema.define(version: 20151125101437) do
 
   create_table "plains", force: :cascade do |t|
-    t.string   "boke"
-    t.string   "tsukkomi"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "boke_origin"
+    t.string   "tsukkomi_origin"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.string   "boke_basic"
+    t.string   "tsukkomi_basic"
   end
 
 end
