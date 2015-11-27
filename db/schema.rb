@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151125101437) do
+ActiveRecord::Schema.define(version: 20151126125829) do
 
   create_table "plains", force: :cascade do |t|
     t.string   "boke_origin"
@@ -21,5 +21,7 @@ ActiveRecord::Schema.define(version: 20151125101437) do
     t.string   "boke_basic"
     t.string   "tsukkomi_basic"
   end
+
+  add_index "plains", ["boke_origin"], name: "index_plains_on_boke_origin"
 
 end
